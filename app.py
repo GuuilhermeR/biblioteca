@@ -8,7 +8,7 @@ def exibir_retorno_select(cursor):
         print(f'{row.name} - {row.city}')
 
 def inserir_registro(cursor):
-    sql_insert = "INSERT INTO Person (name, bihDate, address, city, cellphone) VALUES (?, ?, ?, ?, ?)"
+    sql_insert = "INSERT INTO Person (name, birthDate, address, city, cellphone) VALUES (?, ?, ?, ?, ?)"
     pessoa = {
         "name": "Daniele",
         "birthDate": "1999-03-14",
